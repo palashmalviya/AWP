@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunbeam - Registration</title>
+</head>
+<body bgcolor="lightgrey">
+
+<center>
+    <h1>Registration</h1>
+
+    <table border="2px" rules="none" style="background-color: white; width: 800px; height: 600px;">
+        <tr><td>
+
+
+            <form action="">
+
+                <table style="margin-left: 100px; margin-right: 100px;">
+          
+                    <tr height="40px" >
+                        <td width="200px">
+                            <label for="name">Name</label>
+                          </td>
+                        <td>
+                            <input required placeholder="Enter Name" id="name" type="text"> <span>*</span>
+              
+                        </td>
+                    </tr>
+
+                    <tr height="40px" >
+                        <td width="200px">
+                            <label for="dob">BirthDate</label>
+                          </td>
+                        <td>
+                            <input required id="dob" type="date"> <span>*</span>
+              
+                        </td>
+                    </tr>
+
+                    <tr height="40px" >
+                        <td width="200px">
+                            <label for="birthtime">BirthTime</label>
+                          </td>
+                        <td>
+                            <input id="birthtime" type="time">              
+                        </td>
+                    </tr>
+
+                    <tr height="40px" >
+                        <td width="200px">
+                            <label for="mail">Email</label>
+                          </td>
+                        <td>
+                            <input placeholder="abc@gmail.com" id="mail" type="email">              
+                        </td>
+                    </tr>
+
+                    <tr height="40px" >
+                        <td width="200px">
+                            <label for="pass">Password</label>
+                          </td>
+                        <td>
+                            <input placeholder="password" id="pass" type="password">              
+                        </td>
+                    </tr>
+
+                    <tr height="40px" >
+                        <td width="200px">
+                            Address
+                          </td>
+                        <td>
+                            <select name="State">
+                                  <option value="1">Madhya Pradesh</option>
+                                  <option value="2">Maharashtra</option>
+                                  <option value="3">Delhi</option>
+                                  <option value="4">Uttar Pradesh</option>
+                                  <option value="5">Other</option>                                
+                            </select>
+                            
+                            <select name="District">
+                                <option value="1">Bhopal</option>
+                                <option value="2">Pune</option>
+                                <option value="3">Lucknow</option>
+                                <option value="4">Delhi-NRC</option>
+                                <option value="5">Other</option>                                
+                          </select> 
+                          
+                          <select name="City">
+                            <option value="1">New Bhopal</option>
+                            <option value="2">Hinjewadi</option>
+                            <option value="3">Lucknow</option>
+                            <option value="4">Delhi-NRC</option>
+                            <option value="5">Other</option>                                
+                      </select>  
+                        </td>
+                    </tr>
+
+
+                    <tr height="40px" >
+                        <td width="200px">
+                            Gender
+                        </td>
+                        <td>
+                          <input name="gender" id="male" type="radio">
+                          <label for="male">Male</label>
+            
+                          <input name="gender" id="female" type="radio">
+                          <label for="female">Female</label>
+                        </td>
+                      </tr>
+
+
+                      <tr height="40px" >
+                        <td width="200px">
+                            Upload Photo
+                        </td>
+                        <td>
+                          <input accept="image/*" type="file">
+                        </td>
+                      </tr>
+
+
+                      <tr height="40px" >
+                        <td width="200px">
+                            Select Your Course
+                          </td>
+                        <td>
+                            <select name="Select Course">
+                                <optgroup label="PG Diploma Courses">
+                                  <option value="1">PG-DAC</option>
+                                  <option value="2">PG-DMC</option>
+                                  <option value="3">PG-DESD</option>
+                                  <option value="4">PG-DBDA</option>    
+                                </optgroup> 
+                                
+                                <optgroup label="Modular Courses">
+                                    <option value="1">Core Java</option>
+                                    <option value="2">C++</option>
+                                    <option value="3">Big Data</option>    
+                                  </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <table align="center">
+                    <tr height="60px">
+                      <td width="200px">
+                        <input type="submit" value="Register">
+                      </td>
+
+                      <td width="200px">
+                        <input type="reset" value="Clear">
+                      </td>
+                    </tr>
+                  </table>
+          
+              </form>
+
+        </td></tr>
+
+    </table>
+    
+
+  </center>
+</body>
+</html>
