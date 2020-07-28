@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        td,tr{
+           font-size: 18px;      
+            width: 200px;
+            height: 60px;
+        }
+
+        
+    </style>
+
+    <title>Sunbeam - Home</title>
+</head>
+<body style="background-image: url(img/bg.jpg); background-repeat:repeat-x; ">
+
+    <div style="text-align: center; border: 2px solid black; width: 1200px; height: 200px; margin-left: auto; margin-right: auto; background-color: rgba(162, 218, 235, 0.671);">
+        <h1 style="font-size: 50px;">Sunbeam</h1>
+
+        <div style="text-align: center; margin-left: 100px; margin-right: 100px;">
+
+            <a style="margin-right: 80px; text-decoration: none; font-size: 20px;" href="home.html">Home</a>
+            <a style="margin-right: 80px; text-decoration: none; font-size: 20px;" href="register.html">Register</a>
+            <a style="margin-right: 80px; text-decoration: none; font-size: 20px;" href="placement.html">Placement</a>
+            <a style="text-decoration: none; font-size: 20px;" href="feedback.html ">Feedback</a>
+    
+        </div>
+    </div>
+
+    <br><br>
+    <h1 style="text-align: center;"> <u> Registration </u></h1>
+    <br>
+
+
+   
+    <div style="text-align: center;  width: 900px; height: 650px; margin-left: auto; margin-right: auto; background-image: url(img/bg1.png); background-repeat:round;  ">
+        <div style="margin-bottom: auto; margin-top: auto;">
+            
+            <br><br>
+            <form style="background-color: rgba(255, 255, 255, 0.788);" action="">
+
+                <table style="margin-left: auto; margin-right: auto; text-align: left;">
+          
+                    <tr >
+                        <td>
+                            <label for="name">Name</label>
+                          </td>
+                        <td>
+                            : <input  style="height: 22px; width: 200px;" required placeholder="Enter Name" id="name" type="text"> <span>*</span>
+              
+                        </td>
+                    </tr>
+
+                    <tr >
+                        <td>
+                            <label for="dob">BirthDate</label>
+                          </td>
+                        <td>
+                            : <input  style="height: 28px; width: 200px;" required id="dob" type="date"> <span>*</span>
+              
+                        </td>
+                    </tr>
+
+                    <tr >
+                        <td>
+                            <label for="birthtime">BirthTime</label>
+                          </td>
+                        <td>
+                            : <input  style="height: 28px; width: 200px;" id="birthtime" type="time">              
+                        </td>
+                    </tr>
+
+                    <tr >
+                        <td>
+                            <label for="mail">Email</label>
+                          </td>
+                        <td>
+                           : <input style="height: 22px; width: 200px;" placeholder="abc@gmail.com" id="mail" type="email">              
+                        </td>
+                    </tr>
+
+                    <tr >
+                        <td>
+                            <label for="pass">Password</label>
+                          </td>
+                        <td>
+                            : <input  style="height: 22px; width: 200px;" placeholder="*********" id="pass" type="password">              
+                        </td>
+                    </tr>
+
+                    <tr >
+                        <td>
+                            Address
+                          </td>
+                        <td>
+                             : <select  style="height: 30px; width: 100px;" name="State">
+                                  <option value="1">Madhya Pradesh</option>
+                                  <option value="2">Maharashtra</option>
+                                  <option value="3">Delhi</option>
+                                  <option value="4">Uttar Pradesh</option>
+                                  <option value="5">Other</option>                                
+                            </select>
+                            
+                          
+                          <select  style="height: 30px; width: 100px;" name="City">
+                            <option value="1">New Bhopal</option>
+                            <option value="2">Hinjewadi</option>
+                            <option value="3">Lucknow</option>
+                            <option value="4">Delhi-NRC</option>
+                            <option value="5">Other</option>                                
+                      </select>  
+                        </td>
+                    </tr>
+
+
+                    <tr >
+                        <td>
+                            Gender
+                        </td>
+                        <td>
+                          : <input  name="gender" id="male" type="radio">
+                          <label style="height: 25px;" for="male">Male</label>
+            
+                          <input name="gender" id="female" type="radio">
+                          <label for="female">Female</label>
+                        </td>
+                      </tr>
+
+
+                      <tr >
+                        <td>
+                            Upload Photo
+                        </td>
+                        <td>
+                        <input  accept="image/*" type="file">
+                        </td>
+                      </tr>
+
+
+                      <tr >
+                        <td>
+                            Select Your Course
+                          </td>
+                        <td>
+                             : <select  style="height: 30px; width: 200px;" name="Select Course">
+                                <optgroup label="PG Diploma Courses">
+                                  <option value="1">PG-DAC</option>
+                                  <option value="2">PG-DMC</option>
+                                  <option value="3">PG-DESD</option>
+                                  <option value="4">PG-DBDA</option>    
+                                </optgroup> 
+                                
+                                <optgroup label="Modular Courses">
+                                    <option value="1">Core Java</option>
+                                    <option value="2">C++</option>
+                                    <option value="3">Big Data</option>    
+                                  </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="text-align: center; margin-left: auto; margin-right: auto;" >
+                    <tr>
+                      <td>
+                        <input  style="height: 30px; width: 100px;" type="submit" value="Register">
+                      </td>
+                      
+                      
+                      <td>
+                        <input  style="height: 30px; width: 100px;" type="reset" value="Clear">
+                      </td>
+                    </tr>
+                  </table>
+          
+              </form>
+
+
+
+
+
+
+
+        </div>
+  
+
+       
+
+    </div>
+    
+</body>
+</html> 
