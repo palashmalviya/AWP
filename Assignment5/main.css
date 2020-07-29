@@ -1,0 +1,189 @@
+body{              
+        background-color: #0e0e13;
+        margin: 0;
+        position: relative;
+    
+      
+}
+
+
+
+
+
+
+
+
+div.hbdy{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    height: 1000px;
+    background-position: center;    
+    text-align: center;
+    position: static;
+}
+div.gal{
+    font-size: 70px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: fantasy;
+}
+div.txt{
+    color: rgba(245, 245, 245, 0.158);   
+    opacity: 0.8;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+}
+a.txt{
+    color: rgb(245, 245, 245);
+    border-style: solid;
+    border-width: 4px;
+    opacity: 0.7;
+    border-radius: 300px;
+    text-decoration: none;
+    padding: 16px;
+}
+a:hover.txt {
+    background-color: rgba(73, 72, 72, 0.842);
+    color: #000;
+  }
+p.txxt{
+    color: rgba(245, 245, 245, 0.301);    
+    opacity: 0.9;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+div.bdy{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;    
+    text-align: center;
+    min-height: 1000px;
+    background-attachment: fixed;
+    position: static;
+}
+p.gtxxt{
+    color: rgba(245, 245, 245, 0.562);    
+    opacity: 0.9;
+    font-size: 50px; 
+}
+div.hed{
+    color: rgb(255, 255, 255);   
+    opacity: 0.9;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+div.alb{
+   width: 300px;
+   height: 350px;
+   margin-bottom: 20px;
+   background-color: rgba(0, 0, 0, 0.568);
+   display: inline-block;
+   text-align: left;
+}
+img.alb{
+    width: 200px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+a.alb{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+    padding-left: 50px; 
+}
+div.inalb{
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+div.playalb{
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.568);
+    display: inline-block;
+    text-align: left;
+ }
+ img.playalb{
+     width: 400px;
+     height: 400px;
+     padding-top: 40px;
+     padding-left: 30px;
+ }
+ p.ptit{
+     font-size: 22px;
+     font-weight: bold;
+ }
+
+ p.psing{
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+ div.tit{
+    width: 190px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    text-align: left;
+ }
+div.cont{
+    text-align: center;
+    padding-bottom: 30px;
+}
+audio.sng{
+    width: 550px;
+}
+
+
+
+
+a.home{
+    color: rgb(245, 245, 245);
+    border-style: solid;
+    border-width: 4px;
+    opacity: 0.7;
+    font-size: 20px;
+    border-radius: 300px;
+    text-decoration: none;
+    padding: 16px;
+}
+a:hover.home {
+    background-color: rgba(73, 72, 72, 0.842);
+    color: #000;
+  }
+
+
+
+
+
+
+
+
+
+
