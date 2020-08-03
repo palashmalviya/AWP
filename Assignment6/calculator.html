@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        textarea {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            resize: none;
+            width: 675px;
+            height: 100px;
+            text-align: center;
+            display: block;
+            margin: auto;
+            line-height: 100px;
+        }
+
+        .bdy {
+            position: absolute;
+            padding: 15px;
+            width: 650px;
+            height: 450px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(206, 206, 206);
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 1px #7D7D7D;
+            top: 200px;
+            display: block;
+
+        }
+
+        .txt {
+            padding: 16.3px;
+            margin: auto;
+        }
+
+        .line1 {
+            text-align: right;
+            position: absolute;
+            top: 210px;
+            left: 20px;
+            margin: auto;
+
+        }
+        .line2 {
+            text-align: right;
+            position: absolute;
+            top: 255px;
+            left: 20px;
+            margin: auto;
+
+        }
+        .line3 {
+            text-align: right;
+            position: absolute;
+            top: 300px;
+            left: 20px;
+            margin: auto;
+
+        }
+        .line4 {
+            text-align: right;
+            position: absolute;
+            top: 345px;
+            left: 20px;
+            margin: auto;
+
+        }
+        .line5 {
+            text-align: right;
+            position: absolute;
+            top: 390px;
+            left: 20px;
+            margin: auto;
+
+        }
+        .line6 {
+            text-align: right;
+            position: absolute;
+            top: 435px;
+            left: 20px;
+            margin: auto;
+
+        }
+
+        .opt {
+            border: 1px gray solid;
+            box-shadow: 1px 1px #A6A6A6;
+            height: 30px;
+            width: 205px;
+            border-radius: 5px;
+            background-color: rgb(252, 250, 230);
+        }
+
+        .btn {
+            border: 1px gray solid;
+            box-shadow: 1px 1px #A6A6A6;
+            height: 30px;
+            width: 60px;
+            border-radius: 5px;
+            background-color: rgb(252, 250, 230);
+        }
+
+        .btn1 {
+            border: 1px gray solid;
+            box-shadow: 1px 1px #A6A6A6;
+            height: 30px;
+            width: 81.1px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: rgb(252, 250, 230);
+        }
+
+        .btn2 {
+            border: 1px gray solid;
+            box-shadow: 1px 1px #A6A6A6;
+            height: 30px;
+            width: 124px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: rgb(252, 250, 230);
+        }
+
+        .txtspace{
+            position: absolute;
+            top: 35px;
+            left: 290px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bdy">
+
+        <label class="txtspace"> This is Space</label>
+
+        <div class="line1">
+            <select class="opt" name="x" id="">
+                <option value="x"><i>x</i></option>
+                <option value="y"><i>y</i></option>
+                <option value="z"><i>z</i></option>
+            </select>
+        <label class="txt">to </label>
+
+        <select class="opt" name="x" id="">
+            <option value="x"><i>x</i></option>
+            <option value="y"><i>y</i></option>
+            <option value="z"><i>z</i></option>
+        </select>
+        <label class="txt">0 degree = 0 radians </label>
+
+        </div>
+
+        <div class="line2">
+            <button class="btn">↓n</button>
+            <button class="btn">↑n</button>
+            <button class="btn">×10 <sup>y</sup> </button>
+            <button class="btn">mod</button>
+            <button class="btn">↰</button>
+            <button class="btn">c</button>
+            <button class="btn1">cos</button>
+            <button class="btn1">sin</button>
+            <button class="btn1">tan</button>
+        </div>
+        
+        <div class="line3">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">÷</button>
+            <button class="btn">(</button>
+            <button class="btn">)</button>
+            <button class="btn1">sinh</button>
+            <button class="btn1">cosh</button>
+            <button class="btn1">tanh</button>
+        </div>
+
+
+        <div class="line4">
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">×</button>
+            <select class="btn2" name="x" id="">
+                <option value="x"><i>x</i></option>
+                <option value="y"><i>y</i></option>
+                <option value="z"><i>z</i></option>
+            </select>
+            <button class="btn">x<sup>-1</sup></button>
+            <button class="btn">x!</button>
+            <button class="btn">|x|</button>
+            <button class="btn">Arg</button>
+        </div>
+
+        <div class="line5">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">-</button>
+            <button class="btn">n</button>
+            <button class="btn"><i>e</i></button>
+            <button class="btn"><i>x<sup>y</sup></i></button>
+            <button class="btn">√</button>
+            <button class="btn">log</button>
+            <button class="btn">ln</button>
+        </div>
+
+
+        <div class="line6">
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn"><i>i</i></button>
+            <button class="btn">+</button>
+            <button class="btn">=</button>
+            <button class="btn">a×b</button>
+            <button class="btn">Re</button>
+            <button class="btn">Im</button>
+            <button class="btn">conj</button>
+            <select class="btn" name="fx" id="">
+                <option value="fx">f(x)</option>
+                <option value="fx">f(y)</option>
+                <option value="fx">f(z)</option>
+            </select>
+        </div>
+
+    </div>
+    <textarea placeholder="This is Text Box" name="" id=""></textarea>
+
+</body>
+
+</html>
