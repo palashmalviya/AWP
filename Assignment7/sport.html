@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cats</title>
+
+  <style>
+
+ 
+
+   body {
+            background-color: whitesmoke;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .MenuBar {
+            position: sticky;
+            top: 0;
+            height: 50px;
+            width: auto;
+            text-align: left;
+            background: linear-gradient(45deg, #044d4d 0%, #00bab3 64%, #044d4d 99%);
+            color: rgb(219, 219, 219);
+            line-height: 50px;
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            z-index: 1;
+        }
+
+        .menuitem {
+            position: relative;
+            list-style: none;
+            background: linear-gradient(45deg, #044d4d 0%, #00bab3 64%, #044d4d 99%);
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .amenu {
+            margin-left: 90px;
+            display: inline-block;
+        }
+
+        .menutext {
+            height: 50px;
+            width: auto;
+            display: inline-block;
+            color: rgb(194, 194, 194);
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+        .menutext:hover {
+            color: white;
+        }
+
+        .menu{
+            position: relative;
+            top: 100px;
+            text-align: center;
+        }
+    .product {
+      position: relative;
+      border: gray 2px solid;
+      width: 300px;
+      height: 450px;
+      text-align: center;
+      overflow: hidden;
+      display: inline-block;
+      margin: 10px;
+      box-shadow: 0 0 6px 1px #7a7a7a;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    .product:hover {
+      transform: scale(1.2);
+    }
+
+    .product img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .product .title {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .product .description {
+      margin: 10px;
+      font-size: 18px;
+      color: gray;
+    }
+
+    .product .price {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .product .ribbon {
+      background-color: red;
+      color: white;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px black;
+      width: 200px;
+      box-shadow: 0 0 10px 1px #080808;
+    }
+
+    
+
+    .product .ribbon-right {
+      transform: rotate(45deg);
+      position: absolute;
+      right: -50px;
+      top: 30px;
+    }
+
+    .product .ribbon-left {
+      transform: rotate(-45deg);
+      position: absolute;
+      left: -50px;
+      top: 30px;
+    }
+
+    .product .ribbon-left1 {
+      transform: rotate(-45deg);
+      position: absolute;
+      left: -50px;
+      top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+
+    <div class="MenuBar">
+        <ul class="menuitem">
+            <li class="amenu"> <a class="menutext" href="#">Home </a></li>
+            <li class="amenu"> <a class="menutext" href="toys.html">Toys </a></li>
+            <li class="amenu"> <a class="menutext" href="happ.html">Home Appliances </a></li>
+            <li class="amenu"> <a class="menutext" href="sport.html">Sports & More </a></li>
+        </ul>
+
+    </div>
+
+
+
+  <div class="menu">
+
+  <div class="product">
+    <div class="ribbon ribbon-left">Popular</div>
+    <img src="img/intel.jpg" alt="">
+    <div class="title">Car</div>
+    <div class="description">CarCarCarCarCarCarCarCar</div>
+    <div class="price">Rs. 100</div>
+  </div>
+
+  <div class="product">
+    <img src="img/bestoffer.jpg" alt="">
+    <div class="title">Bike</div>
+    <div class="description">BikeBikeBikeBikeBikeBike</div>
+    <div class="price">Rs. 300</div>
+  </div>
+
+  <div class="product">
+    <div class="ribbon ribbon-left1">Sold</div>
+    <img src="img/datastorage.jpg" alt="">
+    <div class="title">Doll</div>
+    <div class="description">DollDolldollDollDollDollDoll</div>
+    <div class="price">Rs. 700</div>
+  </div>
+
+  <div class="product">
+    <img src="img/tableware.jpg" alt="">
+    <div class="title">Truck</div>
+    <div class="description">TruckTruckTruckTruckTruckTruck</div>
+    <div class="price">Rs.450</div>
+  </div>
+</div>
+
+</body>
+</html>

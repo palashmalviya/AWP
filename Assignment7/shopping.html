@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping - Home</title>
+
+    <style>
+        body {
+            background-color: whitesmoke;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .MenuBar {
+            position: sticky;
+            top: 0;
+            height: 50px;
+            width: auto;
+            text-align: left;
+            background: linear-gradient(45deg, #044d4d 0%, #00bab3 64%, #044d4d 99%);
+            color: rgb(219, 219, 219);
+            line-height: 50px;
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            z-index: 1;
+        }
+
+        .menuitem {
+            position: relative;
+            list-style: none;
+            background: linear-gradient(45deg, #044d4d 0%, #00bab3 64%, #044d4d 99%);
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .amenu {
+            margin-left: 90px;
+            display: inline-block;
+        }
+
+        .menutext {
+            height: 50px;
+            width: auto;
+            display: inline-block;
+            color: rgb(194, 194, 194);
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+        .menutext:hover {
+            color: white;
+        }
+
+        .divleft {
+            position: relative;
+            width: 1000px;
+            height: 550px;
+            margin: 40px;
+            top: -80px;
+
+            display: inline-block;
+        }
+
+        .right {
+            position: relative;
+            width: 700px;
+            height: 550px;
+            border: solid 2px grey;
+            overflow: scroll;
+            margin: 40px;
+            margin-top: 60px;
+
+
+            display: inline-block;
+
+        }
+
+
+        .lefttop {
+
+            position: relative;
+            top: 00px;
+            width: 1000px;
+            height: 450px;
+            background-image: url(img/bestoffer.jpg);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+           
+            display: inline-block;
+
+
+        }
+
+        .dropdown1 {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown1-content {
+            position: absolute;
+            display: none;
+            top: -463px;
+            width: 1000px;
+            height: 450px;
+        }
+        .dropdown1:hover .dropdown1-content {
+            background-image: url(img/bestoffer.jpg);
+            display: block;
+        }
+
+
+        .dropdown2 {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown2-content {
+            position: absolute;
+            display: none;
+            top: -463px;
+
+            left: -203px;
+
+            width: 1000px;
+            height: 450px;
+        }
+        .dropdown2:hover .dropdown2-content {
+            background-image: url(img/tableware.jpg);
+            display: block;
+        }
+
+
+
+
+        .dropdown3 {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown3-content {
+            position: absolute;
+            display: none;
+            top: -463px;
+            left: -405px;
+            width: 1000px;
+            height: 450px;
+        }
+        .dropdown3:hover .dropdown3-content {
+            background-image: url(img/intel.jpg);
+            display: block;
+        }
+
+
+
+
+
+        .dropdown4 {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown4-content {
+            position: absolute;
+            display: none;
+            top: -463px;
+            left: -608px;
+            width: 1000px;
+            height: 450px;
+        }
+        .dropdown4:hover .dropdown4-content {
+            background-image: url(img/datastorage.jpg);
+            display: block;
+        }
+
+
+
+
+
+        button {
+            width: 200px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .leftbottom {
+            position: absolute;
+            bottom: 0px;
+            width: 1000px;
+            height: 60px;
+            text-align: center;
+            line-height: 40px;
+
+        }
+
+
+
+
+        .right ul {
+            width: 700px;
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+
+
+        }
+
+        .right ul li {
+            position: sticky;
+            top: 0px;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            background: linear-gradient(45deg, #044d4d 0%, #00bab3 64%, #044d4d 99%);
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+
+        .bottom {
+            margin: 40px;
+        }
+
+        .bottomitem {
+            background-image: url(img/datastorage.jpg);
+            background-size: cover;
+            margin: 10px;
+            width: 276px;
+            height: 150px;
+            display: inline-block;
+        }
+
+        .bottomitem:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        }
+
+
+
+        .itemleft {
+           
+            background-image: url(img/datastorage.jpg);
+            background-size: cover;
+            margin: 20px;
+            width: 300px;
+            height: 170px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .itemleft:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        }
+
+        button{
+            border: none;
+            height: 40px;
+            background-color: lightseagreen;
+        }
+        button:hover{
+            font-weight: bold;
+        }
+      
+    </style>
+
+</head>
+
+<body>
+
+    <div class="MenuBar">
+        <ul class="menuitem">
+            <li class="amenu"> <a class="menutext" href="#">Home </a></li>
+            <li class="amenu"> <a class="menutext" href="toys.html">Toys </a></li>
+            <li class="amenu"> <a class="menutext" href="happ.html">Home Appliances </a></li>
+            <li class="amenu"> <a class="menutext" href="sport.html">Sports & More </a></li>
+        </ul>
+
+    </div>
+ 
+
+ 
+
+
+    <div class="content">
+
+
+
+        <div class="divleft">
+
+            <div class="lefttop">
+
+                   
+
+                
+            </div>
+
+
+            <div class="dropdown1">
+                <button class="btn1">bestoffer</button>
+                <div class="dropdown1-content"></div>
+            </div>
+
+
+            <div class="dropdown2">
+                <button class="btn2">Tableware</button>
+                <div class="dropdown2-content"></div>
+            </div>
+
+            <div class="dropdown3">
+                <button class="btn3">Intel</button>
+                <div class="dropdown3-content"></div>
+            </div>
+
+            <div class="dropdown4">
+                <button class="btn4">Data Store</button>
+                <div class="dropdown4-content"></div>
+            </div>
+
+
+        </div>
+
+
+        <div class="right">
+            <ul>
+                <li><a href="#">Kids</a></li>
+                <div class="itemleft">
+
+                </div>
+
+                <div class="itemleft">
+
+                </div>
+
+                <div class="itemleft">
+
+                </div>
+                <div class="itemleft">
+
+                </div>
+
+                <div class="itemleft">
+
+                </div>
+
+                <div class="itemleft">
+
+                </div>
+
+                <div class="itemleft">
+
+                </div>
+                <div class="itemleft">
+
+                </div>
+                <li><a href="#">Mens</a></li>
+                <div class="itemleft">
+
+                </div>
+
+                <div class="itemleft">
+
+                </div>
+
+                <div class="itemleft">
+
+                </div>
+                <div class="itemleft">
+
+                </div>
+                <div class="itemleft">
+
+                </div>
+
+                <div class="itemleft">
+
+                </div>
+
+                <div class="itemleft">
+
+                </div>
+                <div class="itemleft">
+
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+
+        <div class="bottomitem">
+
+        </div>
+
+        <div class="bottomitem">
+
+        </div>
+        <div class="bottomitem">
+
+        </div>
+
+        <div class="bottomitem">
+
+        </div>
+
+        <div class="bottomitem">
+
+        </div>
+        <div class="bottomitem">
+
+        </div>
+
+
+    </div>
+    br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+</body>
+
+</html>
