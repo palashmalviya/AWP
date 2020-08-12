@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+
+    <script>
+
+
+        function operation(num) {
+            let n1,n2,n3
+           
+            n1=num%10
+
+            n2=num%100
+            n2=Math.trunc(n2/10)
+            
+            n3=num%1000
+            n3=Math.trunc(n3/100)
+
+
+            n1=n1*n1*n1
+            n2=n2*n2*n2
+            n3=n3*n3*n3
+
+            if(num==(n1+n2+n3)){
+                console.log(`Number ${num} is Armstrong Number`)
+            }
+            else{
+                console.log(`Number ${num} ISNOT Armstrong Number`)
+            }
+
+
+        }
+
+        operation(153)
+        operation(936)
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Write a program to accept a 4 digit number and </h1>
+    <h1>a. Display face value of each decimal digit</h1>
+    <h1>b. Display place value of each decimal digit</h1>
+    <h1>c. Display no in reverse order by changing decimal place values</h1>
+    <h1>If user enters a 4 digit number 9361 output should be</h1>
+    <h1>a. 9  3  6  1</h1>
+    <h1>b. 9361 = 9000 + 300 + 60 + 9</h1>
+    <h1>c. 1639</h1>
+    </p>
+</body>
+
+</html>

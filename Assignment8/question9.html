@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+
+    <script>
+
+
+function operation(num) {
+    let n1,n2,n3,n4,n5
+           
+            n1=num%10
+
+            n2=num%100
+            n2=Math.trunc(n2/10)
+
+            n3=num%1000
+            n3=Math.trunc(n3/100)
+            
+            n4=num%10000
+            n4=Math.trunc(n4/1000)
+
+            n5=Math.trunc(num/10000)
+
+
+            if(n5==n1 && n4==n2){
+                console.log(`Given number ${num} is palindrome`)
+
+            }
+            else{
+                console.log(`Given number ${num} ISNOT palindrome`)
+            }
+
+}
+
+        operation(12321) 
+        operation(30003)
+        operation(81334)
+      
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Write a program to accept a 5 digit number and check whether it is a numeric palindrome. (If
+        reversed number is same as entered number it is called palindrome).</h1>
+
+</body>
+
+</html>

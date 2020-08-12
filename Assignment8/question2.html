@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+
+    <script>
+
+
+        function operation(num) {
+            let n1,n2,n3,n4
+           
+            n1=num%10
+
+            n2=num%100
+            n2=Math.trunc(n2/10)
+            
+            n3=num%1000
+            n3=Math.trunc(n3/100)
+
+            n4=Math.trunc(num/1000)
+
+            console.log(` ${n4},  ${n3},  ${n2},  ${n1}`)
+
+            console.log(` ${num} =  ${n4*1000} +  ${n3*100} +  ${n2*10} + ${n1}`)
+
+
+            n1=n1*1000
+            n2=n2*100
+            n3=n3*10
+            let newnum=n1+n2+n3+n4
+            
+            console.log(` ${num} : ${newnum}`)
+
+        }
+
+        operation(9361)
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Write a program to accept a 4 digit number and </h1>
+    <h1>a. Display face value of each decimal digit</h1>
+    <h1>b. Display place value of each decimal digit</h1>
+    <h1>c. Display no in reverse order by changing decimal place values</h1>
+    <h1>If user enters a 4 digit number 9361 output should be</h1>
+    <h1>a. 9  3  6  1</h1>
+    <h1>b. 9361 = 9000 + 300 + 60 + 9</h1>
+    <h1>c. 1639</h1>
+    </p>
+</body>
+
+</html>
