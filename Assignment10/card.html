@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment10</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        body {
+            background-color: honeydew;
+        }
+        .input-groupp{
+            width: 40%;
+        }
+
+
+        button {
+            
+            margin-left: 17%;
+        }
+
+        .heading1 {
+            padding: 5%;
+            padding-bottom: 0%;
+           
+        }
+        .col-md-12 {
+            border: 2px solid gray;
+            margin-top: 10%;
+            
+            border-radius: 6px;
+            background-color: rgb(212, 250, 212);
+        }
+        #op{
+            position: absolute;
+            padding-left: 3%;
+            padding-top: 4%;
+            background-color: rgba(240, 230, 140, 0.329);
+            top: 60%;
+            left: 45%;
+            width: 50%;
+            height: 30%;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border: khaki 2px solid;
+        
+        }
+    </style>
+    <script>
+        function show() {
+            const cname = document.getElementById('name').value
+            const cno = document.getElementById('cardno').value
+            const cexp = document.getElementById('date').value
+            const ccvv = document.getElementById('cvv').value
+
+                
+
+                document.getElementById('op').innerHTML=`Name on Card : ${cname} <br>
+                Card Number : ${cno} <br>
+                Expire Date : ${cexp} <br>
+                CVV : ${ccvv}`
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+        <div id="left" class="col-md-12">
+            <div class="heading1">
+                <h1>Payment Page</h1>
+            </div>
+            <br><br>
+            <div class="form">
+                <div class="form-group">
+                    <label for="name">Name On Card </label>
+        
+                        <input type="text" class="form-control" id="name">
+    
+                </div>
+
+                <div class="form-group">
+                    <label for="cardno">Credit card number </label>
+            
+                        <input type="number" class="form-control" id="cardno">
+    
+                </div>
+                <div class="form-group">
+                    <label for="date">Expire Date </label>
+                    <div class="input-groupp">
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV </label>
+                    <div class="input-groupp">
+                        <input type="number" class="form-control" id="cvv">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <button onclick="show()" class="btn btn-success">Submit</button>
+<br>
+                   
+                </div>
+            </div>
+
+            <div id="op"></div>
+        
+            <br><br>
+
+        </div>
+
+
+</body>
+
+</html>
