@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic HTML using CSS and JS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        body {
+            background-color: honeydew;
+        }
+      
+        .input-group-addon {
+            width: 30%;
+        }
+
+
+        button {
+            
+            margin-left: 17%;
+        }
+
+        .heading1 {
+            
+            padding: 5%;
+            padding-bottom: 0%;
+            text-align: center;
+
+        }
+
+        .col-md-6 {
+            border: 2px solid gray;
+            margin-top: 10%;
+            
+            border-radius: 6px;
+            background-color: rgb(212, 250, 212);
+           
+        }
+    </style>
+    <script>
+        function show() {
+            const cbill = document.getElementById('bill').value
+            const ctip = document.getElementById('tip').value
+            const ccount = document.getElementById('count').value
+
+                let n1=parseInt(cbill)
+                let n2=parseInt(ctip)
+                let r=parseInt(ccount)
+
+
+                const res=(`${n1+n2}`)
+                const t=(`${res/r}`)
+
+                document.getElementById('perhead').value=`${t}`
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+        <div id="left" class="col-md-6">
+            <div class="heading1">
+                <h1>Calculator</h1>
+            </div>
+            <br><br>
+            <div class="form">
+                <div class="form-group">
+                    <label for="bill">How much was your bill? </label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="bill">
+                        <span class="input-group-addon">Rs</span>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tip">Tip to Waiter </label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="tip">
+                        <span class="input-group-addon">Rs</span>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="count">How Many People Sharing the Bill </label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="count">
+                        <span class="input-group-addon">Person</span>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <button onclick="show()" class="btn btn-success">Calculate</button>
+<br>
+                   
+                </div>
+            </div>
+
+            <div class="form-inline">
+                <div class="form-group">
+                  <label for="perhead">Contribution per Person</label>
+                  <input type="text" class="form-control" id="perhead" readonly >
+                </div>
+            </div>
+        
+            <br><br>
+
+        </div>
+
+
+</body>
+
+</html>
